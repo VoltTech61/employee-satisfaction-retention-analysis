@@ -71,6 +71,18 @@ A dedicated analysis view was then created:
 
 This allowed the analysis to focus only on the variables required for the project.
 
+### Excel Data Cleaning
+
+The dataset was cleaned and standardized in Excel to prepare it for analysis.
+
+![Excel Clean Dataset](SCREENSHOTS/Excel%20Clean%20Dataset.png)
+
+### SQL Data Preparation
+
+SQL was used to handle missing values, standardize date fields, modify data types and create a dedicated analysis view.
+
+![SQL Database Creation](SCREENSHOTS/SQL%20Database%20Creation.png)
+
 ---
 
 ## 🔎 Exploratory Data Analysis
@@ -101,6 +113,18 @@ Some of the main metrics identified include:
 | Marketing | 187 |
 
 The workforce is relatively evenly distributed across the five departments, with Finance having the largest number of employees.
+
+### Excel Exploratory Analysis
+
+PivotTables were used to summarize key workforce metrics and explore patterns in salary, job satisfaction, benefits, performance and employee demographics.
+
+![Excel Pivot Analysis](SCREENSHOTS/Excel%20Pivot%20Charts.png)
+
+### SQL Exploratory Analysis
+
+SQL queries were used to investigate workforce composition, salaries, employee satisfaction, attrition, performance, benefits, training and other HR metrics.
+
+![SQL Exploratory Analysis](SCREENSHOTS/SQL%20Advanced%20EDA.png)
 
 ---
 
@@ -261,32 +285,46 @@ The Power BI report contains three main analytical pages:
 ### 1. Workforce Overview
 Provides an overview of workforce composition across departments, positions, age groups and gender.
 
+![Workforce Overview](SCREENSHOTS/Power%20Bi%20Workforce%20Overview.png)
+
 ### 2. Employee Job Satisfaction Analysis
 Examines satisfaction across department, position, employment type, age group and gender.
 
+![Job Satisfaction Analysis](SCREENSHOTS/Power%20Bi%20Job%20Satisfaction%20Analysis.png)
+
 ### 3. Employee Attrition Rate
 Analyzes attrition according to job satisfaction, performance, gender, position and department.
+
+![Employee Attrition Analysis](SCREENSHOTS/Power%20Bi%20Attrition%20Analysis.png)
 
 ---
 
 ## 📂 Repository Structure
 
 ```text
-HR-Analytics-Project/
+employee-satisfaction-retention-analysis/
 │
-├── data/
-│   ├── HR_data.xlsx
-│   └── HR_data_clean.xlsx
+├── Data/
+│   └── Employee Raw Dataset.xlsx
 │
-├── sql/
-│   └── HR_analysis.sql
+├── EXCEL/
+│   └── Employee_Analysis Data.xlsx
 │
-├── powerbi/
-│   └── HR_Analytics_Dashboard.pbix
+├── POWER BI/
+│   └── Employee_Analysis dashboard.pbix
 │
-├── images/
-│   ├── workforce_overview.png
-│   ├── job_satisfaction_analysis.png
-│   └── employee_attrition.png
+├── SCREENSHOTS/
+│   ├── Excel Clean Dataset.png
+│   ├── Excel Pivot Charts.png
+│   ├── Excel Raw Dataset.png
+│   ├── Power Bi Attrition Analysis.png
+│   ├── Power Bi Job Satisfaction Analysis.png
+│   ├── Power Bi Workforce Overview.png
+│   ├── SQL Advanced EDA.png
+│   ├── SQL Basic EDA.png
+│   └── SQL Database Creation.png
+│
+├── SQL/
+│   └── Employee_Analysis Data.sql
 │
 └── README.md
